@@ -14,6 +14,7 @@
 		25EDE4A51D1EB2560085B28E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25EDE4A31D1EB2560085B28E /* LaunchScreen.storyboard */; };
 		25EDE4B01D1EB2560085B28E /* RecordAPPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EDE4AF1D1EB2560085B28E /* RecordAPPTests.swift */; };
 		25EDE4BB1D1EB2560085B28E /* RecordAPPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EDE4BA1D1EB2560085B28E /* RecordAPPUITests.swift */; };
+		25EDE4C91D1EB2830085B28E /* my_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 25EDE4C81D1EB2830085B28E /* my_logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		25EDE4B61D1EB2560085B28E /* RecordAPPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecordAPPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		25EDE4BA1D1EB2560085B28E /* RecordAPPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordAPPUITests.swift; sourceTree = "<group>"; };
 		25EDE4BC1D1EB2560085B28E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25EDE4C81D1EB2830085B28E /* my_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = my_logo.png; path = ../../../Hello/logo/my_logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				25EDE4A11D1EB2560085B28E /* Assets.xcassets */,
 				25EDE4A31D1EB2560085B28E /* LaunchScreen.storyboard */,
 				25EDE4A61D1EB2560085B28E /* Info.plist */,
+				25EDE4C81D1EB2830085B28E /* my_logo.png */,
 			);
 			path = RecordAPP;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				TargetAttributes = {
 					25EDE4961D1EB2550085B28E = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = WK53DKFTH6;
 					};
 					25EDE4AA1D1EB2560085B28E = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -229,6 +233,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25EDE4C91D1EB2830085B28E /* my_logo.png in Resources */,
 				25EDE4A51D1EB2560085B28E /* LaunchScreen.storyboard in Resources */,
 				25EDE4A21D1EB2560085B28E /* Assets.xcassets in Resources */,
 				25EDE4A01D1EB2550085B28E /* Main.storyboard in Resources */,
@@ -399,6 +404,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = RecordAPP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CLG.RecordAPP;
@@ -410,6 +416,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = RecordAPP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CLG.RecordAPP;
