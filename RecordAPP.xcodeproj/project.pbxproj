@@ -18,6 +18,7 @@
 		25EDE4B01D1EB2560085B28E /* RecordAPPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EDE4AF1D1EB2560085B28E /* RecordAPPTests.swift */; };
 		25EDE4BB1D1EB2560085B28E /* RecordAPPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EDE4BA1D1EB2560085B28E /* RecordAPPUITests.swift */; };
 		25EDE4C91D1EB2830085B28E /* my_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 25EDE4C81D1EB2830085B28E /* my_logo.png */; };
+		25FF3F971D2015FC00D3A9E0 /* game1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25FF3F961D2015FC00D3A9E0 /* game1.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		25EDE4BA1D1EB2560085B28E /* RecordAPPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordAPPUITests.swift; sourceTree = "<group>"; };
 		25EDE4BC1D1EB2560085B28E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25EDE4C81D1EB2830085B28E /* my_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = my_logo.png; path = ../../../Hello/logo/my_logo.png; sourceTree = "<group>"; };
+		25FF3F961D2015FC00D3A9E0 /* game1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = game1.jpg; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				25CC4CA21D1F923A00DFBCE1 /* background.jpg */,
 				25EDE4A61D1EB2560085B28E /* Info.plist */,
 				25CC4CA81D1FC25500DFBCE1 /* back.jpg */,
+				25FF3F961D2015FC00D3A9E0 /* game1.jpg */,
 				25EDE4C81D1EB2830085B28E /* my_logo.png */,
 			);
 			path = RecordAPP;
@@ -245,6 +248,7 @@
 				25EDE4C91D1EB2830085B28E /* my_logo.png in Resources */,
 				25CC4CA31D1F923A00DFBCE1 /* background.jpg in Resources */,
 				25EDE4A51D1EB2560085B28E /* LaunchScreen.storyboard in Resources */,
+				25FF3F971D2015FC00D3A9E0 /* game1.jpg in Resources */,
 				25EDE4A21D1EB2560085B28E /* Assets.xcassets in Resources */,
 				25CC4CA61D1FC25500DFBCE1 /* back.jpg in Resources */,
 				25EDE4A01D1EB2550085B28E /* Main.storyboard in Resources */,
