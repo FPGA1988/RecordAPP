@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25CC4CA31D1F923A00DFBCE1 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25CC4CA21D1F923A00DFBCE1 /* background.jpg */; };
+		25CC4CA61D1FC25500DFBCE1 /* back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25CC4CA81D1FC25500DFBCE1 /* back.jpg */; };
+		25CC4CAA1D1FC7C000DFBCE1 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CC4CA91D1FC7C000DFBCE1 /* Game.swift */; };
 		25EDE49B1D1EB2550085B28E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EDE49A1D1EB2550085B28E /* AppDelegate.swift */; };
 		25EDE49D1D1EB2550085B28E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EDE49C1D1EB2550085B28E /* ViewController.swift */; };
 		25EDE4A01D1EB2550085B28E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25EDE49E1D1EB2550085B28E /* Main.storyboard */; };
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		25CC4CA21D1F923A00DFBCE1 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = SOURCE_ROOT; };
+		25CC4CA71D1FC25500DFBCE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Base; path = Base.lproj/back.jpg; sourceTree = "<group>"; };
+		25CC4CA91D1FC7C000DFBCE1 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		25EDE4971D1EB2550085B28E /* RecordAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecordAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25EDE49A1D1EB2550085B28E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25EDE49C1D1EB2550085B28E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,10 +107,13 @@
 			children = (
 				25EDE49A1D1EB2550085B28E /* AppDelegate.swift */,
 				25EDE49C1D1EB2550085B28E /* ViewController.swift */,
+				25CC4CA91D1FC7C000DFBCE1 /* Game.swift */,
 				25EDE49E1D1EB2550085B28E /* Main.storyboard */,
 				25EDE4A11D1EB2560085B28E /* Assets.xcassets */,
 				25EDE4A31D1EB2560085B28E /* LaunchScreen.storyboard */,
+				25CC4CA21D1F923A00DFBCE1 /* background.jpg */,
 				25EDE4A61D1EB2560085B28E /* Info.plist */,
+				25CC4CA81D1FC25500DFBCE1 /* back.jpg */,
 				25EDE4C81D1EB2830085B28E /* my_logo.png */,
 			);
 			path = RecordAPP;
@@ -234,8 +243,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				25EDE4C91D1EB2830085B28E /* my_logo.png in Resources */,
+				25CC4CA31D1F923A00DFBCE1 /* background.jpg in Resources */,
 				25EDE4A51D1EB2560085B28E /* LaunchScreen.storyboard in Resources */,
 				25EDE4A21D1EB2560085B28E /* Assets.xcassets in Resources */,
+				25CC4CA61D1FC25500DFBCE1 /* back.jpg in Resources */,
 				25EDE4A01D1EB2550085B28E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				25EDE49D1D1EB2550085B28E /* ViewController.swift in Sources */,
+				25CC4CAA1D1FC7C000DFBCE1 /* Game.swift in Sources */,
 				25EDE49B1D1EB2550085B28E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,13 +310,23 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		25CC4CA81D1FC25500DFBCE1 /* back.jpg */ = {
+			isa = PBXVariantGroup;
+			children = (
+				25CC4CA71D1FC25500DFBCE1 /* Base */,
+			);
+			name = back.jpg;
+			sourceTree = SOURCE_ROOT;
+		};
 		25EDE49E1D1EB2550085B28E /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				25EDE49F1D1EB2550085B28E /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
+			path = ../../../../../../../../../Work/projects/app/FirstAPP/RecordAPP/RecordAPP/RecordAPP;
+			sourceTree = SDKROOT;
+			usesTabs = 0;
 		};
 		25EDE4A31D1EB2560085B28E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -354,7 +376,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -393,7 +415,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -406,6 +428,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = RecordAPP/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CLG.RecordAPP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -418,6 +441,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = RecordAPP/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CLG.RecordAPP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -489,6 +513,7 @@
 				25EDE4C11D1EB2560085B28E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		25EDE4C21D1EB2560085B28E /* Build configuration list for PBXNativeTarget "RecordAPPTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +522,7 @@
 				25EDE4C41D1EB2560085B28E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		25EDE4C51D1EB2560085B28E /* Build configuration list for PBXNativeTarget "RecordAPPUITests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +531,7 @@
 				25EDE4C71D1EB2560085B28E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
