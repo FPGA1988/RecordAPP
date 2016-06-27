@@ -26,7 +26,7 @@
                                 <attributedString key="attributedText">
                                     <fragment content="欢乐配对">
                                         <attributes>
-                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="25" name="HelveticaNeue"/>
                                         </attributes>
                                     </fragment>
@@ -53,15 +53,18 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="tf" destination="nfR-gM-0Mi" id="Ele-df-YES"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="130" y="295"/>
+            <point key="canvasLocation" x="56" y="225"/>
         </scene>
-        <!--View Controller-->
+        <!--Game Scene View Control-->
         <scene sceneID="uRi-U5-s7u">
             <objects>
-                <viewController id="gVH-pb-dyr" sceneMemberID="viewController">
+                <viewController id="gVH-pb-dyr" customClass="GameSceneViewControl" customModule="RecordAPP" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mo7-Ez-tgs"/>
                         <viewControllerLayoutGuide type="bottom" id="PL1-p8-6fM"/>
@@ -76,122 +79,212 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P0e-F7-Rk6" userLabel="Button1">
                                 <rect key="frame" x="15" y="90" width="50" height="50"/>
                                 <state key="normal" backgroundImage="back.jpg"/>
+                                <connections>
+                                    <action selector="tileClick:" destination="gVH-pb-dyr" eventType="touchUpInside" id="ltn-RU-NTg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wBr-Y0-vqx" userLabel="Button2">
                                 <rect key="frame" x="75" y="90" width="50" height="50"/>
                                 <state key="normal" backgroundImage="back.jpg"/>
+                                <connections>
+                                    <action selector="tileClick:" destination="gVH-pb-dyr" eventType="touchUpInside" id="bWE-hR-rd9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uik-MA-bhw" userLabel="Button3">
                                 <rect key="frame" x="135" y="90" width="50" height="50"/>
                                 <state key="normal" backgroundImage="back.jpg"/>
+                                <connections>
+                                    <action selector="tileClick:" destination="gVH-pb-dyr" eventType="touchUpInside" id="UWH-6G-tD3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rQQ-0f-RTa" userLabel="Button4">
                                 <rect key="frame" x="195" y="90" width="50" height="50"/>
                                 <state key="normal" backgroundImage="back.jpg"/>
+                                <connections>
+                                    <action selector="tileClick:" destination="gVH-pb-dyr" eventType="touchUpInside" id="lWb-pc-tWi"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3th-z2-FAP" userLabel="Button5">
                                 <rect key="frame" x="255" y="90" width="50" height="50"/>
                                 <state key="normal" backgroundImage="back.jpg"/>
+                                <connections>
+                                    <action selector="tileClick:" destination="gVH-pb-dyr" eventType="touchUpInside" id="135-I8-qA1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJp-WN-YWf" userLabel="Button6">
                                 <rect key="frame" x="15" y="153" width="50" height="50"/>
                                 <state key="normal" backgroundImage="back.jpg"/>
+                                <connections>
+                                    <action selector="tileClick:" destination="gVH-pb-dyr" eventType="touchUpInside" id="lFg-63-vjC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XWC-s1-OVf" userLabel="Button7">
                                 <rect key="frame" x="75" y="153" width="50" height="50"/>
                                 <state key="normal" backgroundImage="back.jpg"/>
+                                <connections>
+                                    <action selector="tileClick:" destination="gVH-pb-dyr" eventType="touchUpInside" id="zjQ-ZD-Y6B"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i5y-zR-N23" userLabel="Button8">
                                 <rect key="frame" x="135" y="153" width="50" height="50"/>
                                 <state key="normal" backgroundImage="back.jpg"/>
+                                <connections>
+                                    <action selector="tileClick:" destination="gVH-pb-dyr" eventType="touchUpInside" id="ovU-AB-KIg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JGP-Fh-saH" userLabel="Button9">
                                 <rect key="frame" x="195" y="153" width="50" height="50"/>
                                 <state key="normal" backgroundImage="back.jpg"/>
+                                <connections>
+                                    <action selector="tileClick:" destination="gVH-pb-dyr" eventType="touchUpInside" id="UKK-nc-lpe"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYr-rN-q0X" userLabel="Button10">
                                 <rect key="frame" x="255" y="153" width="50" height="50"/>
                                 <state key="normal" backgroundImage="back.jpg"/>
+                                <connections>
+                                    <action selector="tileClick:" destination="gVH-pb-dyr" eventType="touchUpInside" id="NZh-qr-zLD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y95-Yn-Jp2" userLabel="Button11">
                                 <rect key="frame" x="15" y="218" width="50" height="50"/>
                                 <state key="normal" backgroundImage="back.jpg"/>
+                                <connections>
+                                    <action selector="tileClick:" destination="gVH-pb-dyr" eventType="touchUpInside" id="KRM-jI-Fel"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJ8-kJ-VG0" userLabel="Button12">
                                 <rect key="frame" x="75" y="218" width="50" height="50"/>
                                 <state key="normal" backgroundImage="back.jpg"/>
+                                <connections>
+                                    <action selector="tileClick:" destination="gVH-pb-dyr" eventType="touchUpInside" id="zIl-zC-2Lh"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nbM-q8-n8G" userLabel="Button13">
                                 <rect key="frame" x="135" y="218" width="50" height="50"/>
                                 <state key="normal" backgroundImage="back.jpg"/>
+                                <connections>
+                                    <action selector="tileClick:" destination="gVH-pb-dyr" eventType="touchUpInside" id="rTR-0A-yGA"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uYK-lf-Pzb" userLabel="Button14">
                                 <rect key="frame" x="195" y="218" width="50" height="50"/>
                                 <state key="normal" backgroundImage="back.jpg"/>
+                                <connections>
+                                    <action selector="tileClick:" destination="gVH-pb-dyr" eventType="touchUpInside" id="K2g-f9-upa"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nw2-0S-UFu" userLabel="Button15">
                                 <rect key="frame" x="255" y="218" width="50" height="50"/>
                                 <state key="normal" backgroundImage="back.jpg"/>
+                                <connections>
+                                    <action selector="tileClick:" destination="gVH-pb-dyr" eventType="touchUpInside" id="4qY-sv-ymz"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eWh-lm-C6d" userLabel="Button16">
                                 <rect key="frame" x="15" y="284" width="50" height="50"/>
                                 <state key="normal" backgroundImage="back.jpg"/>
+                                <connections>
+                                    <action selector="tileClick:" destination="gVH-pb-dyr" eventType="touchUpInside" id="oDD-VB-Ss5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wtc-Oo-oTs" userLabel="Button17">
                                 <rect key="frame" x="75" y="284" width="50" height="50"/>
                                 <state key="normal" backgroundImage="back.jpg"/>
+                                <connections>
+                                    <action selector="tileClick:" destination="gVH-pb-dyr" eventType="touchUpInside" id="0PU-Xu-TqZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="erO-e2-q2t" userLabel="Button18">
                                 <rect key="frame" x="135" y="284" width="50" height="50"/>
                                 <state key="normal" backgroundImage="back.jpg"/>
+                                <connections>
+                                    <action selector="tileClick:" destination="gVH-pb-dyr" eventType="touchUpInside" id="eQi-OU-n53"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Feo-yW-CFR" userLabel="Button19">
                                 <rect key="frame" x="195" y="284" width="50" height="50"/>
                                 <state key="normal" backgroundImage="back.jpg"/>
+                                <connections>
+                                    <action selector="tileClick:" destination="gVH-pb-dyr" eventType="touchUpInside" id="G5D-Ni-Xhx"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vbA-ii-gx2" userLabel="Button20">
                                 <rect key="frame" x="255" y="284" width="50" height="50"/>
                                 <state key="normal" backgroundImage="back.jpg"/>
+                                <connections>
+                                    <action selector="tileClick:" destination="gVH-pb-dyr" eventType="touchUpInside" id="3zP-Fm-OoF"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rhv-qP-Zlr" userLabel="Button21">
                                 <rect key="frame" x="15" y="348" width="50" height="50"/>
                                 <state key="normal" backgroundImage="back.jpg"/>
+                                <connections>
+                                    <action selector="tileClick:" destination="gVH-pb-dyr" eventType="touchUpInside" id="wNa-g3-0uK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q5d-w7-rDD" userLabel="Button22">
                                 <rect key="frame" x="75" y="348" width="50" height="50"/>
                                 <state key="normal" backgroundImage="back.jpg"/>
+                                <connections>
+                                    <action selector="tileClick:" destination="gVH-pb-dyr" eventType="touchUpInside" id="Q31-v8-xJN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Q9-5w-uOQ" userLabel="Button23">
                                 <rect key="frame" x="135" y="348" width="50" height="50"/>
                                 <state key="normal" backgroundImage="back.jpg"/>
+                                <connections>
+                                    <action selector="tileClick:" destination="gVH-pb-dyr" eventType="touchUpInside" id="5E4-ym-a1J"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVj-wy-4Fk" userLabel="Button24">
                                 <rect key="frame" x="195" y="348" width="50" height="50"/>
                                 <state key="normal" backgroundImage="back.jpg"/>
+                                <connections>
+                                    <action selector="tileClick:" destination="gVH-pb-dyr" eventType="touchUpInside" id="g2v-pC-AU9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdR-oF-Z8x" userLabel="Button25">
                                 <rect key="frame" x="255" y="348" width="50" height="50"/>
                                 <state key="normal" backgroundImage="back.jpg"/>
+                                <connections>
+                                    <action selector="tileClick:" destination="gVH-pb-dyr" eventType="touchUpInside" id="HeC-aP-Cr9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="80Y-WK-ZyX" userLabel="Button26">
                                 <rect key="frame" x="15" y="412" width="50" height="50"/>
                                 <state key="normal" backgroundImage="back.jpg"/>
+                                <connections>
+                                    <action selector="tileClick:" destination="gVH-pb-dyr" eventType="touchUpInside" id="hhh-S0-69A"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C5G-FL-N0t" userLabel="Button27">
                                 <rect key="frame" x="75" y="412" width="50" height="50"/>
                                 <state key="normal" backgroundImage="back.jpg"/>
+                                <connections>
+                                    <action selector="tileClick:" destination="gVH-pb-dyr" eventType="touchUpInside" id="Db8-ZU-V8n"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ANv-BO-UBm" userLabel="Button28">
                                 <rect key="frame" x="135" y="412" width="50" height="50"/>
                                 <state key="normal" backgroundImage="back.jpg"/>
+                                <connections>
+                                    <action selector="tileClick:" destination="gVH-pb-dyr" eventType="touchUpInside" id="syo-Wt-rr1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IoH-dU-yPq" userLabel="Button29">
                                 <rect key="frame" x="195" y="412" width="50" height="50"/>
                                 <state key="normal" backgroundImage="back.jpg"/>
+                                <connections>
+                                    <action selector="tileClick:" destination="gVH-pb-dyr" eventType="touchUpInside" id="4a9-Or-1wg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vTb-Wh-ezR" userLabel="Button30">
                                 <rect key="frame" x="255" y="412" width="50" height="50"/>
                                 <state key="normal" backgroundImage="back.jpg"/>
+                                <connections>
+                                    <action selector="tileClick:" destination="gVH-pb-dyr" eventType="touchUpInside" id="37M-5s-L1v"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3bQ-fB-Wpz">
                                 <rect key="frame" x="0.0" y="523" width="320" height="50"/>
@@ -212,7 +305,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" useAutomaticPreferredMaxLayoutWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hWR-H0-wsT">
                                 <rect key="frame" x="0.0" y="20" width="320" height="39"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -221,7 +314,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Ju-o3-db3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="511" y="338"/>
+            <point key="canvasLocation" x="139" y="351"/>
         </scene>
     </scenes>
     <resources>

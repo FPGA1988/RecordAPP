@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		259B03F01D2166FF00386F3C /* majiang in Resources */ = {isa = PBXBuildFile; fileRef = 259B03EF1D2166FF00386F3C /* majiang */; };
 		25CC4CA31D1F923A00DFBCE1 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25CC4CA21D1F923A00DFBCE1 /* background.jpg */; };
 		25CC4CA61D1FC25500DFBCE1 /* back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25CC4CA81D1FC25500DFBCE1 /* back.jpg */; };
 		25CC4CAA1D1FC7C000DFBCE1 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CC4CA91D1FC7C000DFBCE1 /* Game.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		259B03EF1D2166FF00386F3C /* majiang */ = {isa = PBXFileReference; lastKnownFileType = folder; path = majiang; sourceTree = SOURCE_ROOT; };
 		25CC4CA21D1F923A00DFBCE1 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = SOURCE_ROOT; };
 		25CC4CA71D1FC25500DFBCE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Base; path = Base.lproj/back.jpg; sourceTree = "<group>"; };
 		25CC4CA91D1FC7C000DFBCE1 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
@@ -84,6 +86,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		259B03EE1D2166EA00386F3C /* image */ = {
+			isa = PBXGroup;
+			children = (
+				259B03EF1D2166FF00386F3C /* majiang */,
+			);
+			name = image;
+			sourceTree = "<group>";
+		};
 		25EDE48E1D1EB2550085B28E = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +128,7 @@
 				25CC4CA81D1FC25500DFBCE1 /* back.jpg */,
 				25FF3F961D2015FC00D3A9E0 /* game1.jpg */,
 				25EDE4C81D1EB2830085B28E /* my_logo.png */,
+				259B03EE1D2166EA00386F3C /* image */,
 			);
 			path = RecordAPP;
 			sourceTree = "<group>";
@@ -208,7 +219,6 @@
 				TargetAttributes = {
 					25EDE4961D1EB2550085B28E = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = WK53DKFTH6;
 					};
 					25EDE4AA1D1EB2560085B28E = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -251,6 +261,7 @@
 				25FF3F971D2015FC00D3A9E0 /* game1.jpg in Resources */,
 				25EDE4A21D1EB2560085B28E /* Assets.xcassets in Resources */,
 				25CC4CA61D1FC25500DFBCE1 /* back.jpg in Resources */,
+				259B03F01D2166FF00386F3C /* majiang in Resources */,
 				25EDE4A01D1EB2550085B28E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
